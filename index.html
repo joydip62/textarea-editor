@@ -3,15 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>textarea</title>
-
-    <link rel="stylesheet" href="./style.css">
+    <title>textarea editor</title>
 
     <script
       src="https://kit.fontawesome.com/d2fcbb6384.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      textarea {
+        width: 100%;
+        padding: 20px;
+      }
+    </style>
   </head>
   <body>
     <div class="w-8/12 bg-gray-400 m-auto mt-5 p-5">
@@ -27,7 +32,7 @@
             <i class="fa-solid fa-underline"></i>
           </span>
         </div>
-        
+
         <div class="first">
           <span class="font-extrabold cursor-pointer" id="text-left">
             <i class="fa-solid fa-align-left"></i>
@@ -38,11 +43,10 @@
           <span class="font-extrabold cursor-pointer" id="text-right">
             <i class="fa-solid fa-align-right"></i>
           </span>
-          
+
           <span class="font-extrabold cursor-pointer ml-3" id="text-justify">
             <i class="fa-solid fa-align-justify"></i>
           </span>
-
         </div>
 
         <div class="first">
@@ -51,25 +55,24 @@
           </span>
           <span class="font-bold mx-3 cursor-pointer">
             <select name="" id="font-size">
-                <option value="">0</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
+              <option value="">0</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
             </select>
           </span>
           <span class="font-extrabold cursor-pointer">
-            <input type="color" name="" id="font-color">
+            <input type="color" name="" id="font-color" />
             <p id="selected-color"></p>
           </span>
         </div>
-
-
-
       </div>
       <textarea name="" id="text-area" rows="10" class="mt-4"></textarea>
     </div>
+
+    <script></script>
 
     <script src="./index.js"></script>
   </body>
